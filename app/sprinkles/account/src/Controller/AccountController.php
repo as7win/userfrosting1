@@ -424,6 +424,7 @@ class AccountController extends SimpleController
 
         return $redirectOnLogin($request, $response, $args);
     }
+    
 
     /**
      * Log the user out completely, including destroying any "remember me" token.

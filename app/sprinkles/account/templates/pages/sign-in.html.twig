@@ -51,7 +51,8 @@
           </div>
         </form>
         {% endblock %}
-
+        <a
+         href = "{{site.uri.public}}/site/page1"> page</a>
         {% block loginLinks %}
         <a href="{{site.uri.public}}/account/forgot-password">{{translate('PASSWORD.FORGET')}}</a><br>
         {% if site.registration.require_email_verification %}
@@ -90,3 +91,4 @@
     <!-- Include page-specific JS -->
     {{ assets.js('js/pages/sign-in') | raw }}
 {% endblock %}
+

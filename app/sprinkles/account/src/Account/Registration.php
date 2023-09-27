@@ -230,8 +230,8 @@ class Registration
     protected function setDefaults()
     {
         $this->verified = $this->ci->config['site.registration.require_email_verification'];
-        $this->requireEmailVerification = $this->ci->config['site.registration.require_email_verification'];
-        $this->defaultGroup = $this->ci->config['site.registration.user_defaults.group'];
+        $this->requireEmailVerification = false; /*$this->ci->config['site.registration.require_email_verification'];*/
+        $this->defaultGroup = $this->ci->config['site.registration.user_defaults.group']; /*enable email verification */
         $this->defaultRoles = $this->ci->classMapper->getClassMapping('role')::getDefaultSlugs();
     }
 
